@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HS Engenharia & Comércio</title>
+    <link rel="icon" href="src/assets/images/logo-HGS.png" type="image/png">
+
+    <!-- Google Fonts: Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@300;400;500;700;800&family=Orbitron:wght@800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/mobile.css">
+</head>
+
+<body>
+
+    <header id="main-header" class="header" aria-label="Global Navigation">
+        <div class="container header__container">
+            <a href="#home" class="header__brand-text" aria-label="Home Page">
+                <img src="src/assets/images/logo-HGS.png" alt="HS-HGS Logo" class="header__logo-img">
+                <div class="brand-text__container">
+                    <span class="brand-text__title">HS-HGS</span>
+                    <span class="brand-text__subtitle">Soluções em Telecomunicações</span>
+                </div>
+            </a>
+            <nav class="header__nav" aria-label="Main Navigation Menu">
+                <ul class="header__menu">
+                    <li><a href="#home" class="header__link">Home</a></li>
+                    <li><a href="#solutions" class="header__link">Soluções</a></li>
+                    <li><a href="#services" class="header__link">Serviços</a></li>
+                    <li><a href="#company" class="header__link">Sobre nós</a></li>
+                    <li><a href="#contact" class="header__link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section id="home" class="hero theme-dark" aria-labelledby="home-title-id">
+        <!-- Main background image with overlay -->
+        <div class="hero__image-container">
+            <img src="src/assets/images/banner.jpeg" alt="Estrutura arquitetônica principal" class="hero__bg-image">
+            <div class="hero__overlay"></div>
+        </div>
+
+        <!-- Content aligned to the bottom left -->
+        <div class="container hero__content-container">
+            <div class="hero__content js-reveal">
+                <h1 id="home-title-id" class="hero__title">CONECTANDO PESSOAS,<br>UNINDO <span
+                        class="highlight-orange">POSSIBILIDADES</span></h1>
+                <hr class="hero__divider">
+                <p class="hero__subtitle">Soluções completas em infraestrutura de telecomunicações com tecnologia,
+                    segurança e eficiência.</p>
+                <a href="#contact" class="btn btn--solid hero__cta">Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Banner -->
+    <section class="features-banner theme-dark">
+        <div class="container features-banner__container js-reveal">
+            <div class="features-banner__item">
+                <div class="features-banner__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9" />
+                        <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5" />
+                        <circle cx="12" cy="12" r="2" />
+                        <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5" />
+                        <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19" />
+                        <path d="m12 14-3 8h6l-3-8Z" />
+                    </svg>
+                </div>
+                <h3>INFRAESTRUTURA<br>DE REDE</h3>
+            </div>
+
+            <div class="features-banner__divider"></div>
+
+            <div class="features-banner__item">
+                <div class="features-banner__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 10a7.31 7.31 0 0 0 10 10Z" />
+                        <path d="m9 15 3-3" />
+                        <path d="M17 13a6 6 0 0 0-6-6" />
+                        <path d="M21 13A10 10 0 0 0 11 3" />
+                    </svg>
+                </div>
+                <h3>TRANSMISSÃO<br>DE DADOS</h3>
+            </div>
+
+            <div class="features-banner__divider"></div>
+
+            <div class="features-banner__item">
+                <div class="features-banner__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+                        <path d="M12 12v9" />
+                        <path d="m16 16-4-4-4 4" />
+                    </svg>
+                </div>
+                <h3>CONECTIVIDADE<br>EM NUVEM</h3>
+            </div>
+
+            <div class="features-banner__divider"></div>
+
+            <div class="features-banner__item">
+                <div class="features-banner__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                </div>
+                <h3>SEGURANÇA<br>E CONFIABILIDADE</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="solutions theme-light" aria-labelledby="solutions-main-title">
+        <div class="container solutions__container">
+
+            <!-- Section Header -->
+            <header class="solutions__header js-reveal">
+                <h2 id="solutions-main-title" class="solutions__main-title">Engenharia e Soluções Integradas</h2>
+                <p class="solutions__lead">
+                    Do planejamento estratégico à ativação de campo. Desenvolvemos ecossistemas completos de
+                    conectividade e infraestrutura crítica para garantir que sua operação nunca pare.
+                </p>
+            </header>
+
+            <!-- Solutions Grid -->
+            <div class="solutions__grid js-reveal" style="--reveal-delay: 100ms;">
+
+                <article class="solution-item" aria-labelledby="solution-turnkey">
+                    <div class="solution-item__icon-wrapper" aria-hidden="true">
+                        <!-- Map Pin Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 id="solution-turnkey" class="solution-item__title">Implantação e Sites Turnkey</h3>
+                    <p class="solution-item__description">
+                        Gerenciamento fim a fim desde o Site Survey e Site Acquisition (aquisição de áreas) até a
+                        execução da infraestrutura civil completa para novos pontos de presença.
+                    </p>
+                </article>
+
+                <article class="solution-item" aria-labelledby="solution-rf">
+                    <div class="solution-item__icon-wrapper" aria-hidden="true">
+                        <!-- Wifi Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
+                            <line x1="12" y1="20" x2="12.01" y2="20"></line>
+                        </svg>
+                    </div>
+                    <h3 id="solution-rf" class="solution-item__title">Sistemas Irradiantes e RF</h3>
+                    <p class="solution-item__description">
+                        Instalação técnica especializada de antenas, estruturas irradiantes, torres, postes metálicos e
+                        configuração de redes Wi-Fi corporativas de alta densidade.
+                    </p>
+                </article>
+
+                <article class="solution-item" aria-labelledby="solution-energy">
+                    <div class="solution-item__icon-wrapper" aria-hidden="true">
+                        <!-- Zap/Energy Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 id="solution-energy" class="solution-item__title">Sistemas de Energia CA/CC</h3>
+                    <p class="solution-item__description">
+                        Dimensionamento e instalação de sistemas de energia de alta confiabilidade, incluindo redes
+                        estabilizadas, retificadores CC, bancos de baterias e Grupos Motogeradores.
+                    </p>
+                </article>
+
+                <article class="solution-item" aria-labelledby="solution-structured">
+                    <div class="solution-item__icon-wrapper" aria-hidden="true">
+                        <!-- Server Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3 id="solution-structured" class="solution-item__title">Cabeamento e Ambiente Crítico</h3>
+                    <p class="solution-item__description">
+                        Lançamento de cabeamento estruturado metálico e óptico certificado, integrado a sistemas de
+                        climatização de precisão para proteção de equipamentos ativos.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="solutions__actions js-reveal" style="--reveal-delay: 200ms;">
+                <a href="#contact" class="btn btn--solid">Solicitar Análise Técnica</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Institutional Presentation -->
+    <section id="presentation-telecom" class="presentation theme-light" aria-labelledby="presentation-title">
+        <div class="container">
+
+            <div class="presentation__layout-grid js-reveal">
+
+                <!-- Content / Text Block -->
+                <div class="presentation__content">
+                    <h2 id="presentation-title" class="presentation__title">
+                        Nossa Missão
+                    </h2>
+
+                    <p class="presentation__text">
+                        A HGS Telecom nasce para prover soluções completas em infraestrutura de telecomunicações, unindo
+                        tecnologia de ponta, segurança rigorosa e máxima eficiência operacional.
+                    </p>
+
+                    <p class="presentation__text">
+                        Mais do que erguer estruturas e conectar cabos, nós construímos os caminhos invisíveis que
+                        viabilizam a transmissão de dados, a comunicação contínua e a evolução digital de empresas e
+                        instituições públicas por todo o país.
+                    </p>
+
+                    <div class="presentation__actions">
+                        <a href="#contact" class="btn btn--solid">Saiba Mais</a>
+                    </div>
+                </div>
+
+                <!-- Structural Image Block -->
+                <div class="presentation__media-wrapper">
+                    <video class="presentation__video" src="src/assets/videos/time-lapse-loop.mp4" autoplay loop muted playsinline></video>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Company Values Banner -->
+    <section class="values-banner theme-dark">
+        <div class="container js-reveal">
+            <div id="values" class="company__values">
+                
+                <!-- Specialized Team -->
+                <div class="company-value-item">
+                    <div class="company-value-item__icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="company-value-item__title">EQUIPE ESPECIALIZADA</h3>
+                    <p class="company-value-item__text">Profissionais qualificados e comprometidos</p>
+                </div>
+
+                <!-- Quality -->
+                <div class="company-value-item">
+                    <div class="company-value-item__icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="6"></circle>
+                            <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+                        </svg>
+                    </div>
+                    <h3 class="company-value-item__title">QUALIDADE</h3>
+                    <p class="company-value-item__text">Soluções eficientes com padrões de excelência</p>
+                </div>
+
+                <!-- Commitment -->
+                <div class="company-value-item">
+                    <div class="company-value-item__icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m11 17 2 2a1 1 0 1 0 3-3"></path>
+                            <path
+                                d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4">
+                            </path>
+                            <path d="m21 3 1 11h-2"></path>
+                            <path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"></path>
+                            <path d="M3 4h8"></path>
+                        </svg>
+                    </div>
+                    <h3 class="company-value-item__title">COMPROMISSO</h3>
+                    <p class="company-value-item__text">Foco em resultados e satisfação do cliente</p>
+                </div>
+
+                <!-- Innovation -->
+                <div class="company-value-item">
+                    <div class="company-value-item__icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline>
+                            <polyline points="16 7 22 7 22 13"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="company-value-item__title">INOVAÇÃO</h3>
+                    <p class="company-value-item__text">Tecnologia avançada para um futuro conectado</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Company -->
+    <section id="company" class="company theme-light" aria-labelledby="company-title-id">
+        <div class="container company__container">
+
+            <!-- Impact Title -->
+            <header class="company__header js-reveal">
+                <h2 id="company-title-id" class="company__title">
+                    Criando Infraestrutura.<br>
+                    Entregando Excelência.
+                </h2>
+            </header>
+
+            <!-- Editorial 2-Column Grid -->
+            <div class="company__grid">
+
+                <!-- Left Column -->
+                <div class="company__col company__col--left js-reveal" style="--reveal-delay: 100ms;">
+                    <div class="company__block company__block--bordered">
+                        <h3 class="company__subtitle">Sinergia e Fusão</h3>
+                        <p class="company__text">
+                            Unimos a robustez em infraestrutura civil da HS Engenharia com a alta tecnologia em conexões
+                            da HGS Telecom. Uma força unificada que entrega inteligência, engenharia integrada e
+                            conectividade fim a fim para o mercado.
+                        </p>
+                    </div>
+
+                    <div class="company__foundation">
+                        <span class="company__foundation-text">Desde 2008</span>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="company__col company__col--right js-reveal" style="--reveal-delay: 200ms;">
+                    <div class="company__image-container">
+                        <img src="src/assets/images/banner.jpg" alt="Equipe de engenharia em campo"
+                            class="company__image">
+                        <div class="company__overlay"></div>
+                    </div>
+
+                    <div class="company__block company__block--bordered">
+                        <h3 class="company__subtitle">Nossa Visão</h3>
+                        <p class="company__text">
+                            Ser reconhecida no mercado nacional como a principal referência em engenharia de soluções
+                            integradas — do planejamento inicial à entrega final do empreendimento.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Services -->
+    <section id="services" class="services theme-light" aria-labelledby="services-main-title-id">
+        <div class="container services__container">
+
+            <header class="services__header js-reveal">
+                <h2 id="services-main-title-id" class="services__main-title">Nossos Serviços</h2>
+            </header>
+
+            <!-- Services Navigation -->
+            <nav class="services__nav js-reveal" aria-label="Services Navigation">
+                <button type="button" class="services__nav-item is-active"
+                    data-target="service-telecom">Telecomunicações</button>
+                <span class="services__separator" aria-hidden="true">|</span>
+                <button type="button" class="services__nav-item" data-target="service-urbanization">Urbanização</button>
+                <span class="services__separator" aria-hidden="true">|</span>
+                <button type="button" class="services__nav-item" data-target="service-buildings">Edificações</button>
+                <span class="services__separator" aria-hidden="true">|</span>
+                <button type="button" class="services__nav-item" data-target="service-energy">Energia Elétrica</button>
+                <span class="services__separator" aria-hidden="true">|</span>
+                <button type="button" class="services__nav-item" data-target="service-datacenter">Data Centers</button>
+                <span class="services__separator" aria-hidden="true">|</span>
+                <button type="button" class="services__nav-item"
+                    data-target="service-paving">Pavimentação</button>
+                <span class="services__separator" aria-hidden="true">|</span>
+                <button type="button" class="services__nav-item" data-target="service-retrofit">Retrofit</button>
+                <span class="services__separator" aria-hidden="true">|</span>
+                <button type="button" class="services__nav-item" data-target="service-maintenance">Manutenção</button>
+            </nav>
+
+            <!-- Presentation Board -->
+            <div class="services__presentation-wrapper js-reveal" style="--reveal-delay: 100ms;">
+
+                <!-- Telecommunications -->
+                <article id="service-telecom" class="service-presentation is-active">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/telecomunicaçao.jpg" alt="Serviços de Telecomunicações">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Tele<br class="mobile-br">comunicações</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Site Survey e Site Acquisition</li>
+                            <li class="service-card__item">Infraestrutura e Construção Civil associada</li>
+                            <li class="service-card__item">Sistemas de energia CA, CC e Grupos Motogeradores</li>
+                            <li class="service-card__item">Cabeamento estruturado e Sistemas de Climatização</li>
+                            <li class="service-card__item">Instalação de Sistemas Irradiantes, Torres, Postes e Redes
+                                Wi-Fi</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Urbanization -->
+                <article id="service-urbanization" class="service-presentation">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/urbanizaçao.jpg" alt="Serviços de Urbanização">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Urbanização</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Construção de praças, calçadas e ciclovias</li>
+                            <li class="service-card__item">Estacionamentos e cercamentos de áreas públicas e privadas
+                            </li>
+                            <li class="service-card__item">Quadras poliesportivas cobertas e descobertas</li>
+                            <li class="service-card__item">Redes de iluminação pública urbana e rural</li>
+                            <li class="service-card__item">Sistemas de drenagem de solo e vias de águas pluviais</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Buildings -->
+                <article id="service-buildings" class="service-presentation">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/edificaçao.jpg" alt="Serviços de Edificações">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Edificações</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Execução de fundações, estruturas de concreto e alvenaria
+                            </li>
+                            <li class="service-card__item">Reforço estrutural e demarcação técnica de terrenos</li>
+                            <li class="service-card__item">Instalações elétricas e hidráulicas prediais e industriais
+                            </li>
+                            <li class="service-card__item">Impermeabilização de fundações, coberturas e estruturas</li>
+                            <li class="service-card__item">Revestimentos, acabamentos, pinturas e restauração de
+                                fachadas</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Electrical Energy -->
+                <article id="service-energy" class="service-presentation">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/energia.jpg" alt="Serviços de Energia Elétrica">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Energia Elétrica</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Construção e montagem de subestações de energia elétrica</li>
+                            <li class="service-card__item">Implantação de linhas de transmissão de alta e média tensão
+                            </li>
+                            <li class="service-card__item">Construção de redes elétricas urbanas e rurais</li>
+                            <li class="service-card__item">Projetos elétricos prediais, comerciais e industriais</li>
+                            <li class="service-card__item">Infraestrutura para redes estabilizadas de energia</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Data Centers -->
+                <article id="service-datacenter" class="service-presentation">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/data-center.jpg" alt="Serviços para Data Centers">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Data Centers</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Obras civis especializadas, portas corta-fogo e piso elevado
+                            </li>
+                            <li class="service-card__item">Cabeamento estruturado óptico e metálico de alta performance
+                            </li>
+                            <li class="service-card__item">Sistemas de climatização e refrigeração de precisão</li>
+                            <li class="service-card__item">Sistemas integrados de energia ininterrupta e aterramento
+                            </li>
+                            <li class="service-card__item">Prevenção contra incêndio, controle de acesso e CFTV</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Paving -->
+                <article id="service-paving" class="service-presentation">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/pavi.jpg" alt="Serviços de Pavimentação">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Pavimentação</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Pavimentação asfáltica e aplicação de asfalto</li>
+                            <li class="service-card__item">Aplicação de lama asfáltica</li>
+                            <li class="service-card__item">Micro revestimento asfáltico a frio</li>
+                            <li class="service-card__item">Pavimentação intertravada com bloquetes</li>
+                            <li class="service-card__item">Infraestrutura de vias e acessos</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Retrofit -->
+                <article id="service-retrofit" class="service-presentation">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/retrofit.jpg" alt="Serviços de Retrofit">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Retrofit</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Revitalização, reforma e recuperação de fachadas e coberturas
+                            </li>
+                            <li class="service-card__item">Modernização arquitetônica e adequação às leis condominiais
+                            </li>
+                            <li class="service-card__item">Elaboração de projetos arquitetônicos 3D e planilhas
+                                orçamentárias</li>
+                            <li class="service-card__item">Implantação de paisagismo urbano e manutenção predial
+                                integrada</li>
+                            <li class="service-card__item">Execução de projetos de individualização de hidrômetros</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- Maintenance -->
+                <article id="service-maintenance" class="service-presentation">
+                    <div class="service-presentation__image">
+                        <img src="src/assets/images/manutençao.jpg" alt="Serviços de Manutenção">
+                        <div class="service-presentation__overlay"></div>
+                    </div>
+                    <div class="service-presentation__content">
+                        <h3 class="service-presentation__title">Manutenção</h3>
+                        <ul class="service-card__list">
+                            <li class="service-card__item">Manutenção preventiva e corretiva em torres de transmissão
+                            </li>
+                            <li class="service-card__item">Serviços em sistemas de energia e radiofrequência (RF)</li>
+                            <li class="service-card__item">Manutenção predial e prevenção de falhas em infraestruturas
+                            </li>
+                            <li class="service-card__item">Conservação e climatização de precisão para Data Centers</li>
+                            <li class="service-card__item">Gerenciamento de operações e garantia de qualidade técnica
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+
+            <!-- CTA -->
+            <div class="services__cta-container js-reveal" style="--reveal-delay: 200ms;">
+                <a href="#contact" class="btn btn--solid">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Clients -->
+    <section id="clients" class="clients theme-dark" aria-labelledby="clients-title-id">
+        <div class="container clients__container">
+            <header class="clients__header js-reveal">
+                <h2 id="clients-title-id" class="clients__title">Nossos Clientes</h2>
+            </header>
+        </div>
+
+        <div class="clients__gallery js-reveal" style="--reveal-delay: 200ms;">
+            <!-- Top Carousel (Right to Left) -->
+            <div class="carousel__track carousel__track--left">
+                <div class="carousel__content">
+                    <article class="client-card"><img src="src/assets/images/clients/cliente1.png" alt="Cliente 1" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente2.png" alt="Cliente 2" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente3.png" alt="Cliente 3" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente4.png" alt="Cliente 4" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente5.png" alt="Cliente 5" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente6.png" alt="Cliente 6" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente7.png" alt="Cliente 7" class="client-card__image"></article>
+                    <!-- Duplicated for infinite loop -->
+                    <article class="client-card"><img src="src/assets/images/clients/cliente1.png" alt="Cliente 1" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente2.png" alt="Cliente 2" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente3.png" alt="Cliente 3" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente4.png" alt="Cliente 4" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente5.png" alt="Cliente 5" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente6.png" alt="Cliente 6" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente7.png" alt="Cliente 7" class="client-card__image"></article>
+                </div>
+            </div>
+
+            <!-- Bottom Carousel (Left to Right) -->
+            <div class="carousel__track carousel__track--right">
+                <div class="carousel__content">
+                    <article class="client-card"><img src="src/assets/images/clients/cliente8.png" alt="Cliente 8" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente9.jpeg" alt="Cliente 9" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente10.jpeg" alt="Cliente 10" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente11.jpeg" alt="Cliente 11" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente12.jpg" alt="Cliente 12" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente13.jpg" alt="Cliente 13" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente14.jpg" alt="Cliente 14" class="client-card__image"></article>
+                    <!-- Duplicated for infinite loop -->
+                    <article class="client-card"><img src="src/assets/images/clients/cliente8.png" alt="Cliente 8" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente9.jpeg" alt="Cliente 9" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente10.jpeg" alt="Cliente 10" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente11.jpeg" alt="Cliente 11" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente12.jpg" alt="Cliente 12" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente13.jpg" alt="Cliente 13" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente14.jpg" alt="Cliente 14" class="client-card__image"></article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Contact -->
+    <section id="contact" class="contact-section theme-light" aria-labelledby="contact-title">
+        <div class="container contact__container js-reveal">
+
+            <header class="contact__header">
+                <h2 id="contact-title" class="contact__title">Contato</h2>
+            </header>
+
+            <div class="contact__grid">
+                <!-- Left Column: Info -->
+                <div class="contact__info">
+                    <p class="contact__description">
+                        Deixe sua mensagem se deseja contratar nossos serviços, sugestões ou dúvidas através do
+                        formulário ou por telefone. Aguardamos seu contato!!!
+                    </p>
+
+                    <address class="contact__address">
+                        <ul class="contact__details-list">
+                            <li><strong>Endereço:</strong> QNM 23 CONJUNTO N LOTE 29 CEILÂNDIA SUL. BRASÍLIA/DF - CEP:
+                                72.215-244.</li>
+                            <li><strong>Telefone:</strong> +55 61 3022-1556</li>
+                            <li><strong>E-mail:</strong> contato@hssolucoes.eng.br</li>
+                        </ul>
+                    </address>
+
+                    <div class="contact__social">
+                        <!-- SVG Icons (LinkedIn, Instagram, etc) in monochrome format -->
+                    </div>
+                </div>
+
+                <!-- Right Column: Form -->
+                <div class="contact__form-wrapper">
+                    <form class="form" id="contact-form" novalidate>
+                        <div class="form__group">
+                            <label for="name" class="form__label sr-only">Nome</label>
+                            <input type="text" id="name" name="name" class="form__input" placeholder="Nome" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" class="form__label sr-only">Seu e-mail</label>
+                            <input type="email" id="email" name="email" class="form__input" placeholder="Seu e-mail"
+                                required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="form__label sr-only">Sua mensagem</label>
+                            <textarea id="message" name="message" class="form__textarea" placeholder="Sua mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--solid form__submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer theme-dark" aria-label="Website Footer">
+        <div class="container footer__container js-reveal">
+
+            <!-- Footer Main Grid -->
+            <div class="footer__grid">
+                <!-- Column 1: Institutional -->
+                <div class="footer__col footer__col--brand">
+                    <a href="#home" class="footer__brand-text" aria-label="Home Page">
+                        <img src="src/assets/images/logo-HGS.png" alt="HS-HGS Logo" class="footer__logo-img">
+                        <div class="footer-brand-text__container">
+                            <span class="brand-text__title">HS-HGS</span>
+                            <span class="brand-text__subtitle">Soluções em Telecomunicações</span>
+                        </div>
+                    </a>
+                    <p class="footer__text">
+                        Desde 2008, entregando soluções integradas e excelência técnica em engenharia para o mercado
+                        público e privado.
+                    </p>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <nav class="footer__col footer__col--nav" aria-label="Footer Navigation">
+                    <h3 class="footer__subtitle">Nosso Site</h3>
+                    <ul class="footer__links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#solutions">Soluções</a></li>
+                        <li><a href="#services">Serviços</a></li>
+                        <li><a href="#company">Sobre nós</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Column 3: Quick Contact -->
+                <div class="footer__col footer__col--contact">
+                    <h3 class="footer__subtitle">Contato</h3>
+                    <ul class="footer__links">
+                        <li><a href="mailto:contato@hssolucoes.eng.br">contato@hssolucoes.eng.br</a></li>
+                        <li><a href="tel:+556130221556">+55 61 3022-1556</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Legal Bar -->
+            <div class="footer__legal">
+                <p class="footer__copyright">© 2026 HS Engenharia e Comércio. Todos os direitos reservados.</p>
+                <div class="footer__policy-links">
+                    <a href="politica-privacidade.html">Política de Privacidade</a>
+                    <span class="separator">|</span>
+                    <a href="termos-uso.html">Termos de Uso</a>
+                </div>
+                <div class="footer__signature">
+                    <!-- Minimalist agency logo -->
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JS Link -->
+    <script src="src/js/main.js"></script>
+</body>
+
+</html>

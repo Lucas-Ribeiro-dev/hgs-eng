@@ -73,12 +73,14 @@ function initSmoothScroll() {
 function initServicesCarousel() {
     const navItems = document.querySelectorAll('.services__nav-item');
     const services = document.querySelectorAll('.service-presentation');
+    const pauseBtn = document.querySelector('.services__pause-btn');
     
     if (!navItems.length || !services.length) return;
 
     let currentIndex = 0;
     let intervalId;
     const intervalTime = 5000; // 5 seconds
+    let isPaused = false;
 
     function showService(index) {
         // Remove active class from all
@@ -103,12 +105,36 @@ function initServicesCarousel() {
     }
 
     function startAutoLoop() {
-        intervalId = setInterval(nextService, intervalTime);
+        if (!isPaused) {
+            intervalId = setInterval(nextService, intervalTime);
+        }
     }
 
     function resetAutoLoop() {
         clearInterval(intervalId);
-        startAutoLoop();
+        if (!isPaused) {
+            startAutoLoop();
+        }
+    }
+
+    if (pauseBtn) {
+        const iconPause = pauseBtn.querySelector('.icon-pause');
+        const iconPlay = pauseBtn.querySelector('.icon-play');
+        
+        pauseBtn.addEventListener('click', () => {
+            isPaused = !isPaused;
+            if (isPaused) {
+                clearInterval(intervalId);
+                iconPause.style.display = 'none';
+                iconPlay.style.display = 'block';
+                pauseBtn.setAttribute('aria-label', 'Continuar transição automática');
+            } else {
+                startAutoLoop();
+                iconPause.style.display = 'block';
+                iconPlay.style.display = 'none';
+                pauseBtn.setAttribute('aria-label', 'Pausar transição automática');
+            }
+        });
     }
 
     // Add click events to nav
@@ -122,6 +148,26 @@ function initServicesCarousel() {
 
     // Start automatic loop
     startAutoLoop();
+
+    const servicesSection = document.getElementById('services');
+    if (servicesSection && pauseBtn) {
+        const iconPause = pauseBtn.querySelector('.icon-pause');
+        const iconPlay = pauseBtn.querySelector('.icon-play');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting && isPaused) {
+                    isPaused = false;
+                    startAutoLoop();
+                    if (iconPause && iconPlay) {
+                        iconPause.style.display = 'block';
+                        iconPlay.style.display = 'none';
+                        pauseBtn.setAttribute('aria-label', 'Pausar transição automática');
+                    }
+                }
+            });
+        }, { threshold: 0 });
+        observer.observe(servicesSection);
+    }
 }
 
 function initContactForm() {

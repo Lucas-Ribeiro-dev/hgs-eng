@@ -19,9 +19,6 @@
   }
 
   /* Hero */
-  #home {
-    max-height: 95vh;
-  }
   .hero__title {
     font-size: clamp(2rem, 8vw, 3rem);
   }

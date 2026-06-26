@@ -316,10 +316,11 @@ ul {
 /* --- HERO SECTION --- */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: flex-end;
-  padding-bottom: 140px;
+  padding-bottom: calc(4rem + env(safe-area-inset-bottom));
+  box-sizing: border-box;
 }
 
 .hero__image-container {
@@ -583,10 +584,6 @@ ul {
 .solutions__actions {
   text-align: center;
 }
-
-
-
-
 
 .hero__content {
   max-width: 800px;

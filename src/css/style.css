@@ -919,12 +919,13 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .services__pause-btn {
   position: absolute;
   bottom: var(--spacing-24);
   right: 10%;
   z-index: 10;
-  background-color: rgba(0, 0, 0, 0.5); 
+  background-color: rgba(0, 0, 0, 0.5);
   color: #e0e0e0;
   border: none;
   border-radius: 10%;
@@ -944,33 +945,42 @@ ul {
   transform: scale(1.05);
 }
 
+/* Imagens dos serviços em mobile diferentes */
 /* Imagens dos serviços */
 #service-telecom .service-presentation__image {
   background-image: url('../assets/images/services/telecomunicacoes.png');
 }
+
 #service-urbanization .service-presentation__image {
   background-image: url('../assets/images/services/urbanizacao.png');
 }
+
 #service-buildings .service-presentation__image {
   background-image: url('../assets/images/services/edificacao.png');
 }
+
 #service-energy .service-presentation__image {
   background-image: url('../assets/images/services/energia-eletrica.png');
 }
+
 #service-datacenter .service-presentation__image {
-  background-image: url('../assets/images/placeholder.jpg');
+  background-image: url('../assets/images/services/data-centers.png');
 }
+
 #service-paving .service-presentation__image {
   background-image: url('../assets/images/services/pavimentacao.jpeg');
 }
+
 #service-energy .service-presentation__image {
-  background-image: url('../assets/images/placeholder.jpg');
+  background-image: url('../assets/images/services/energia-eletrica.png');
 }
+
 #service-retrofit .service-presentation__image {
-  background-image: url('../assets/images/placeholder.jpg');
+  background-image: url('../assets/images/services/retrofit.png');
 }
+
 #service-maintenance .service-presentation__image {
-  background-image: url('../assets/images/placeholder.jpg');
+  background-image: url('../assets/images/services/manutencao.png');
 }
 
 .service-presentation__content {
@@ -979,46 +989,6 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-
-.service-presentation__title {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-card-title);
-  font-weight: var(--weight-light);
-  color: var(--theme-text, var(--color-text-primary));
-  margin-bottom: var(--spacing-24);
-  text-transform: uppercase;
-  letter-spacing: var(--letter-spacing-wide);
-}
-
-/* Lista de Serviço */
-.service-card__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  flex-grow: 1;
-}
-
-.service-card__item {
-  position: relative;
-  font-size: var(--font-size-body);
-  color: var(--theme-text-muted, var(--color-text-muted));
-  line-height: var(--line-height-body);
-  padding-left: var(--spacing-16);
-  margin-bottom: 0;
-}
-
-.service-card__item::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 10px;
-  width: 8px;
-  height: 2px;
-  background-color: var(--color-brand-accent);
 }
 
 /* CTA Container */

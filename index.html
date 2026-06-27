@@ -30,7 +30,16 @@
                     <span class="brand-text__subtitle">Soluções em Telecomunicações</span>
                 </div>
             </a>
-            <nav class="header__nav" aria-label="Main Navigation Menu">
+            
+            <button class="burger-menu" id="burger-menu" aria-label="Abrir menu" aria-expanded="false" type="button">
+                <span class="burger-menu__line"></span>
+                <span class="burger-menu__line"></span>
+                <span class="burger-menu__line"></span>
+            </button>
+            <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+
+            <nav class="header__nav" id="header-nav" aria-label="Main Navigation Menu">
+                
                 <ul class="header__menu">
                     <li><a href="#home" class="header__link">Home</a></li>
                     <li><a href="#solutions" class="header__link">Soluções</a></li>
@@ -247,7 +256,8 @@
 
                 <!-- Structural Image Block -->
                 <div class="presentation__media-wrapper">
-                    <video class="presentation__video" src="src/assets/videos/time-lapse-loop.mp4" autoplay loop muted playsinline></video>
+                    <video class="presentation__video" src="src/assets/videos/time-lapse-loop.mp4" autoplay loop muted
+                        playsinline></video>
                 </div>
 
             </div>
@@ -259,7 +269,7 @@
     <section class="values-banner theme-dark">
         <div class="container js-reveal">
             <div id="values" class="company__values">
-                
+
                 <!-- Specialized Team -->
                 <div class="company-value-item">
                     <div class="company-value-item__icon-wrapper">
@@ -396,8 +406,7 @@
                 <span class="services__separator" aria-hidden="true">|</span>
                 <button type="button" class="services__nav-item" data-target="service-datacenter">Data Centers</button>
                 <span class="services__separator" aria-hidden="true">|</span>
-                <button type="button" class="services__nav-item"
-                    data-target="service-paving">Pavimentação</button>
+                <button type="button" class="services__nav-item" data-target="service-paving">Pavimentação</button>
                 <span class="services__separator" aria-hidden="true">|</span>
                 <button type="button" class="services__nav-item" data-target="service-retrofit">Retrofit</button>
                 <span class="services__separator" aria-hidden="true">|</span>
@@ -410,44 +419,46 @@
                     <div class="service-presentation__image" aria-label="Serviços de Telecomunicações" role="img">
                     </div>
                 </article>
-            <article id="service-urbanization" class="service-presentation">
-                <div class="service-presentation__image" aria-label="Serviços de Urbanização" role="img">
-                </div>
-            </article>
-            <article id="service-buildings" class="service-presentation">
-                <div class="service-presentation__image" aria-label="Serviços de Edificações" role="img">
-                </div>
-            </article>
-            <article id="service-energy" class="service-presentation">
-                <div class="service-presentation__image" aria-label="Serviços de Energia Elétrica" role="img">
-                </div>
-            </article>
-            <article id="service-datacenter" class="service-presentation">
-                <div class="service-presentation__image" aria-label="Serviços para Data Centers" role="img">
-                </div>
-            </article>
-            <article id="service-paving" class="service-presentation">
-                <div class="service-presentation__image" aria-label="Serviços de Pavimentação" role="img">
-                </div>
-            </article>
-            <article id="service-retrofit" class="service-presentation">
-                <div class="service-presentation__image" aria-label="Serviços de Retrofit" role="img">
-                </div>
-            </article>
-            <article id="service-maintenance" class="service-presentation">
-                <div class="service-presentation__image" aria-label="Serviços de Manutenção" role="img">
-                </div>
-            </article>
-            <button class="services__pause-btn" aria-label="Pausar transição automática" type="button">
-                <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <rect x="6" y="4" width="4" height="16"></rect>
-                    <rect x="14" y="4" width="4" height="16"></rect>
-                </svg>
-                <svg class="icon-play" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-            </button>
-        </div>
+                <article id="service-urbanization" class="service-presentation">
+                    <div class="service-presentation__image" aria-label="Serviços de Urbanização" role="img">
+                    </div>
+                </article>
+                <article id="service-buildings" class="service-presentation">
+                    <div class="service-presentation__image" aria-label="Serviços de Edificações" role="img">
+                    </div>
+                </article>
+                <article id="service-energy" class="service-presentation">
+                    <div class="service-presentation__image" aria-label="Serviços de Energia Elétrica" role="img">
+                    </div>
+                </article>
+                <article id="service-datacenter" class="service-presentation">
+                    <div class="service-presentation__image" aria-label="Serviços para Data Centers" role="img">
+                    </div>
+                </article>
+                <article id="service-paving" class="service-presentation">
+                    <div class="service-presentation__image" aria-label="Serviços de Pavimentação" role="img">
+                    </div>
+                </article>
+                <article id="service-retrofit" class="service-presentation">
+                    <div class="service-presentation__image" aria-label="Serviços de Retrofit" role="img">
+                    </div>
+                </article>
+                <article id="service-maintenance" class="service-presentation">
+                    <div class="service-presentation__image" aria-label="Serviços de Manutenção" role="img">
+                    </div>
+                </article>
+                <button class="services__pause-btn" aria-label="Pausar transição automática" type="button">
+                    <svg class="icon-pause" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="16"></rect>
+                        <rect x="14" y="4" width="4" height="16"></rect>
+                    </svg>
+                    <svg class="icon-play" style="display: none;" xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                </button>
+            </div>
 
             <!-- CTA -->
             <div class="services__cta-container js-reveal" style="--reveal-delay: 200ms;">
@@ -468,42 +479,70 @@
             <!-- Top Carousel (Right to Left) -->
             <div class="carousel__track carousel__track--left">
                 <div class="carousel__content">
-                    <article class="client-card"><img src="src/assets/images/clients/cliente1.png" alt="Cliente 1" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente2.png" alt="Cliente 2" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente3.png" alt="Cliente 3" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente4.png" alt="Cliente 4" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente5.png" alt="Cliente 5" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente6.png" alt="Cliente 6" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente7.png" alt="Cliente 7" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente1.png" alt="Cliente 1"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente2.png" alt="Cliente 2"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente3.png" alt="Cliente 3"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente4.png" alt="Cliente 4"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente5.png" alt="Cliente 5"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente6.png" alt="Cliente 6"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente7.png" alt="Cliente 7"
+                            class="client-card__image"></article>
                     <!-- Duplicated for infinite loop -->
-                    <article class="client-card"><img src="src/assets/images/clients/cliente1.png" alt="Cliente 1" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente2.png" alt="Cliente 2" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente3.png" alt="Cliente 3" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente4.png" alt="Cliente 4" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente5.png" alt="Cliente 5" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente6.png" alt="Cliente 6" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente7.png" alt="Cliente 7" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente1.png" alt="Cliente 1"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente2.png" alt="Cliente 2"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente3.png" alt="Cliente 3"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente4.png" alt="Cliente 4"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente5.png" alt="Cliente 5"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente6.png" alt="Cliente 6"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente7.png" alt="Cliente 7"
+                            class="client-card__image"></article>
                 </div>
             </div>
 
             <!-- Bottom Carousel (Left to Right) -->
             <div class="carousel__track carousel__track--right">
                 <div class="carousel__content">
-                    <article class="client-card"><img src="src/assets/images/clients/cliente8.png" alt="Cliente 8" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente9.jpeg" alt="Cliente 9" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente10.jpeg" alt="Cliente 10" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente11.jpeg" alt="Cliente 11" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente12.jpg" alt="Cliente 12" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente13.jpg" alt="Cliente 13" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente14.jpg" alt="Cliente 14" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente8.png" alt="Cliente 8"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente9.jpeg" alt="Cliente 9"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente10.jpeg" alt="Cliente 10"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente11.jpeg" alt="Cliente 11"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente12.jpg" alt="Cliente 12"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente13.jpg" alt="Cliente 13"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente14.jpg" alt="Cliente 14"
+                            class="client-card__image"></article>
                     <!-- Duplicated for infinite loop -->
-                    <article class="client-card"><img src="src/assets/images/clients/cliente8.png" alt="Cliente 8" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente9.jpeg" alt="Cliente 9" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente10.jpeg" alt="Cliente 10" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente11.jpeg" alt="Cliente 11" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente12.jpg" alt="Cliente 12" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente13.jpg" alt="Cliente 13" class="client-card__image"></article>
-                    <article class="client-card"><img src="src/assets/images/clients/cliente14.jpg" alt="Cliente 14" class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente8.png" alt="Cliente 8"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente9.jpeg" alt="Cliente 9"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente10.jpeg" alt="Cliente 10"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente11.jpeg" alt="Cliente 11"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente12.jpg" alt="Cliente 12"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente13.jpg" alt="Cliente 13"
+                            class="client-card__image"></article>
+                    <article class="client-card"><img src="src/assets/images/clients/cliente14.jpg" alt="Cliente 14"
+                            class="client-card__image"></article>
                 </div>
             </div>
         </div>
@@ -527,7 +566,8 @@
 
                     <address class="contact__address">
                         <ul class="contact__details-list">
-                            <li><strong>Endereço:</strong> QNM 23 CONJUNTO B LOTE 47 CEP:72215-232 CEILADIA SUL. BRASILIA/DF - CEP:
+                            <li><strong>Endereço:</strong> QNM 23 CONJUNTO B LOTE 47 CEP:72215-232 CEILADIA SUL.
+                                BRASILIA/DF - CEP:
                                 00.000-000 TROCAR CEP.</li>
                             <li><strong>Telefone:</strong> +55 61 99644-1342</li>
                             <li><strong>E-mail:</strong> contato@hssolucoes.eng.br</li>

@@ -1,30 +1,118 @@
-/* --- RESPONSIVIDADE PARA HERO SECTION --- */
-
-
-
 @media (max-width: 992px) {
   .header__menu {
     gap: var(--spacing-16);
   }
-
 }
 
 @media (max-width: 768px) {
-
-  /* Reduzir o cabecalho no mobile */
-  .header__menu,
-  .header__cta {
-    display: none;
-    /* Em uma implementação real haveria um menu hamburger, mas por agora ocultamos para focar no Hero */
+  .header__brand-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
   }
 
-  /* Hero */
-  .hero__title {
-    font-size: clamp(2rem, 8vw, 3rem);
+  .brand-text__title {
+    font-size: 1.5rem;
   }
 
-  .hero__subtitle {
-    font-size: 1.3rem;
+  .brand-text__subtitle {
+    font-size: 0.6rem;
+  }
+
+  .header__logo-img {
+    height: 36px;
+  }
+
+  .burger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .burger-menu__line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+
+  .header--scrolled .burger-menu__line {
+    background-color: var(--color-text-primary);
+  }
+
+  .burger-menu.is-active .burger-menu__line:first-child {
+    transform: rotate(45deg);
+  }
+
+  .burger-menu.is-active .burger-menu__line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.is-active .burger-menu__line:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+
+  .header--scrolled .burger-menu.is-active .burger-menu__line {
+    background-color: var(--color-white);
+  }
+
+  .header__nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100dvh;
+    background-color: var(--color-bg-dark);
+    padding: var(--spacing-64) var(--spacing-32);
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__nav.is-open {
+    right: 0;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-24);
+    margin-top: var(--spacing-32);
+  }
+
+  .header__link {
+    color: var(--color-white);
+    font-size: var(--font-size-body);
+  }
+
+  .mobile-menu-overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    inset: 0;
+    width: auto;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 998;
+  }
+
+  .mobile-menu-overlay.is-open {
+    opacity: 1;
+    pointer-events: auto;
   }
 
   .btn {
@@ -32,16 +120,8 @@
     font-size: var(--font-size-small);
   }
 
-  .company {
-    padding: 60px 0;
-  }
-
   .values {
     padding: 0;
-  }
-
-  .services {
-    padding: 60px 0;
   }
 
   .clients {
@@ -52,14 +132,6 @@
     width: 150px;
   }
 
-  .contact-section {
-    padding: 60px 0;
-  }
-
-  .company__grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-48);
-  }
 
   .values__header {
     grid-template-columns: 1fr;
@@ -118,12 +190,16 @@
     background-image: url('../assets/images/services/manutencao_mobile.png');
   }
 
+
+  .service-presentation__content {
+    flex: 1 1 auto;
+    padding: var(--spacing-24) var(--spacing-16);
+  }
+
   .company__block--bordered {
     margin-bottom: var(--spacing-32);
   }
 
-  /* Contato & Footer */
-  .contact__grid,
   .footer__grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-32);
@@ -134,33 +210,6 @@
     align-items: center;
     text-align: center;
     gap: var(--spacing-16);
-  }
-}
-
-@media (max-width: 480px) {
-  .hero__title {
-    font-size: clamp(1.75rem, 10vw, 2.1rem);
-    margin-bottom: var(--spacing-16);
-  }
-
-  .hero__subtitle {
-    margin-bottom: var(--spacing-32);
-  }
-
-  .hero {
-    padding-bottom: var(--spacing-64);
-  }
-}
-
-/* --- MOVED FROM STYLE.CSS --- */
-
-@media (max-width: 1024px) {
-  .solutions__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .company__values {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -175,21 +224,9 @@
     height: 2px;
   }
 
-  .presentation__layout-grid {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-48);
-  }
 }
 
 @media (max-width: 768px) {
-  .solutions__grid {
-    grid-template-columns: 1fr;
-  }
-
-  .company__values {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-48);
-  }
 
   .footer__brand-text {
     margin: 0 auto var(--spacing-16) auto;

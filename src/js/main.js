@@ -4,11 +4,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initServicesCarousel();
     initContactForm();
+    initMobileMenu();
 });
 
 function initHeaderScroll() {
     const headerElement = document.getElementById('main-header');
-    
+
     if (!headerElement) return;
     if (headerElement.classList.contains('header--solid')) return;
 
@@ -23,14 +24,14 @@ function initHeaderScroll() {
     window.addEventListener('scroll', () => {
         window.requestAnimationFrame(checkScroll);
     }, { passive: true });
-    
+
     // Check on load
     checkScroll();
 }
 
 function initRevealAnimation() {
     const elements = document.querySelectorAll('.js-reveal');
-    
+
     if (!elements.length) return;
 
     const observerOptions = {
@@ -53,12 +54,12 @@ function initRevealAnimation() {
 
 function initSmoothScroll() {
     const links = document.querySelectorAll('a[href^="#"]');
-    
+
     links.forEach(link => {
-        link.addEventListener('click', function(e) {
+        link.addEventListener('click', function (e) {
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 e.preventDefault();
@@ -74,7 +75,7 @@ function initServicesCarousel() {
     const navItems = document.querySelectorAll('.services__nav-item');
     const services = document.querySelectorAll('.service-presentation');
     const pauseBtn = document.querySelector('.services__pause-btn');
-    
+
     if (!navItems.length || !services.length) return;
 
     let currentIndex = 0;
@@ -89,11 +90,11 @@ function initServicesCarousel() {
 
         // Add active class to current item
         navItems[index].classList.add('is-active');
-        
+
         // Find target id and show corresponding service
         const targetId = navItems[index].getAttribute('data-target');
         const targetElement = document.getElementById(targetId);
-        
+
         if (targetElement) {
             targetElement.classList.add('is-active');
         }
@@ -120,7 +121,7 @@ function initServicesCarousel() {
     if (pauseBtn) {
         const iconPause = pauseBtn.querySelector('.icon-pause');
         const iconPlay = pauseBtn.querySelector('.icon-play');
-        
+
         pauseBtn.addEventListener('click', () => {
             isPaused = !isPaused;
             if (isPaused) {
@@ -174,15 +175,15 @@ function initContactForm() {
     const form = document.getElementById('contact-form');
     if (!form) return;
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
-        
+
         let isValid = true;
         const inputs = form.querySelectorAll('input, textarea');
-        
+
         inputs.forEach(input => {
             input.classList.remove('is-invalid');
-            
+
             if (!input.value.trim()) {
                 isValid = false;
                 input.classList.add('is-invalid');
@@ -194,11 +195,53 @@ function initContactForm() {
                 }
             }
         });
-        
+
         if (isValid) {
             // In a real scenario, this would be an AJAX request
             alert('Message sent successfully!');
             form.reset();
         }
+    });
+}
+
+function initMobileMenu() {
+    const burgerMenu = document.getElementById('burger-menu');
+    const headerNav = document.getElementById('header-nav');
+    const overlay = document.getElementById('mobile-menu-overlay');
+    const navLinks = document.querySelectorAll('.header__link');
+
+    if (!burgerMenu || !headerNav || !overlay) return;
+
+    function toggleMenu() {
+        const isOpen = headerNav.classList.contains('is-open');
+        
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    function openMenu() {
+        burgerMenu.classList.add('is-active');
+        burgerMenu.setAttribute('aria-expanded', 'true');
+        headerNav.classList.add('is-open');
+        overlay.classList.add('is-open');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling
+    }
+
+    function closeMenu() {
+        burgerMenu.classList.remove('is-active');
+        burgerMenu.setAttribute('aria-expanded', 'false');
+        headerNav.classList.remove('is-open');
+        overlay.classList.remove('is-open');
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+
+    burgerMenu.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', closeMenu);
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', closeMenu);
     });
 }

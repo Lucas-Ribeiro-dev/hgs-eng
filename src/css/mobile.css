@@ -35,6 +35,11 @@
     z-index: 1000;
   }
 
+  .mobile-menu-overlay {
+    display: block;
+  }
+
+
   .burger-menu__line {
     width: 30px;
     height: 3px;
@@ -152,6 +157,12 @@
     flex: 0 0 auto;
     height: 600px;
   }
+
+  .services__pause-btn {
+  bottom: 90%;
+  right: 4%;
+  
+}
 
   /* Imagens dos serviços */
   #service-telecom .service-presentation__image {

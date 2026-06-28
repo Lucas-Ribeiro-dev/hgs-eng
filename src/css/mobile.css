@@ -131,11 +131,9 @@
   }
 
   .hero__title {
-    font-size: clamp(1.75rem, 8vw, 3rem);
     letter-spacing: 0.04em;
     max-width: 100%;
   }
-
 
   .btn {
     padding: var(--spacing-16) var(--spacing-24);

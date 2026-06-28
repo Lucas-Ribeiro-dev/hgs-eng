@@ -5,10 +5,19 @@
 }
 
 @media (max-width: 768px) {
+  .header__container {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: var(--spacing-24);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .header__brand-text {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+    min-width: 0;
   }
 
   .brand-text__title {
@@ -33,12 +42,13 @@
     border: none;
     cursor: pointer;
     z-index: 1000;
+    flex-shrink: 0;
+    margin-left: auto;
   }
 
   .mobile-menu-overlay {
     display: block;
   }
-
 
   .burger-menu__line {
     width: 30px;
@@ -120,6 +130,13 @@
     pointer-events: auto;
   }
 
+  .hero__title {
+    font-size: clamp(1.75rem, 8vw, 3rem);
+    letter-spacing: 0.04em;
+    max-width: 100%;
+  }
+
+
   .btn {
     padding: var(--spacing-16) var(--spacing-24);
     font-size: var(--font-size-small);
@@ -136,7 +153,6 @@
   .client-card {
     width: 150px;
   }
-
 
   .values__header {
     grid-template-columns: 1fr;
@@ -159,10 +175,10 @@
   }
 
   .services__pause-btn {
-  bottom: 90%;
-  right: 4%;
-  
-}
+    bottom: 90%;
+    right: 4%;
+
+  }
 
   /* Imagens dos serviços */
   #service-telecom .service-presentation__image {

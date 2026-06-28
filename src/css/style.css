@@ -288,6 +288,7 @@ ul {
 .mobile-menu-overlay {
   display: none;
 }
+
 .hero {
   position: relative;
   min-height: 100dvh;
@@ -326,6 +327,52 @@ ul {
 .hero__content-container {
   position: relative;
   z-index: 3;
+}
+
+.hero__content {
+  max-width: 800px;
+}
+
+.hero__title {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-hero-title);
+  font-weight: var(--weight-black);
+  color: var(--color-white);
+  letter-spacing: var(--letter-spacing-wide);
+  line-height: var(--line-height-heading);
+  margin-bottom: var(--spacing-24);
+  text-transform: uppercase;
+}
+
+.hero__subtitle {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  font-weight: var(--weight-medium);
+  color: var(--color-border-light);
+  margin-bottom: var(--spacing-48);
+  max-width: 600px;
+}
+
+.hero__divider {
+  width: 80px;
+  border: none;
+  border-top: 5px solid var(--color-brand-accent);
+  margin-bottom: var(--spacing-32);
+}
+
+.highlight-orange {
+  color: var(--color-brand-accent);
+}
+
+.js-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition-default);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.js-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .features-banner {
@@ -545,52 +592,6 @@ ul {
 
 .solutions__actions {
   text-align: center;
-}
-
-.hero__content {
-  max-width: 800px;
-}
-
-.hero__title {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-hero-title);
-  font-weight: var(--weight-black);
-  color: var(--color-white);
-  letter-spacing: var(--letter-spacing-wide);
-  line-height: var(--line-height-heading);
-  margin-bottom: var(--spacing-24);
-  text-transform: uppercase;
-}
-
-.hero__subtitle {
-  font-size: clamp(1.125rem, 2vw, 1.5rem);
-  font-weight: var(--weight-medium);
-  color: var(--color-border-light);
-  margin-bottom: var(--spacing-48);
-  max-width: 600px;
-}
-
-.hero__divider {
-  width: 80px;
-  border: none;
-  border-top: 5px solid var(--color-brand-accent);
-  margin-bottom: var(--spacing-32);
-}
-
-.highlight-orange {
-  color: var(--color-brand-accent);
-}
-
-.js-reveal {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: var(--transition-default);
-  transition-delay: var(--reveal-delay, 0ms);
-}
-
-.js-reveal.is-visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .company {
